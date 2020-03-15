@@ -6,7 +6,7 @@
 # -----------------------------------------------------------------------------
 # Globals 
 # -----------------------------------------------------------------------------
-$Version    = "0.0.2-alpha"
+$Version    = "0.0.3-alpha"
 $AppRoot    = "$PSScriptRoot\..\.."
 $AppInfoDir = "$AppRoot\App\AppInfo"
 $AppInfoIni = "$AppInfoDir\appinfo.ini"
@@ -113,9 +113,9 @@ Function Download-Release {
 }
 
 # -----------------------------------------------------------------------------
-Function Expand-Zip {
+Function Expand-Download {
   param(
-    [string] $ZipFile
+    [string] $ArchiveFile
   )
   Expand-Archive -LiteralPath $ArchiveFile `
     -DestinationPath $PSScriptRoot -Force
@@ -132,7 +132,7 @@ Function Update-Release {
   $ReleaseFile = $(Download-Release -URL $URL -Checksum $Checksum)
   $TargetPath = "$AppRoot\App\$TargetName"
   Switch -regex ($ReleaseFile) {
-    '\.[Zz][Ii][Pp]$' { Expand-Zip --ZipFile $ReleaseFile; break }
+    '\.[Zz][Ii][Pp]$' { Expand-Download -ArchiveFile $ReleaseFile; break }
   }
   If (Test-Path $TargetPath) {
     Debug "Removing $TargetPath"
