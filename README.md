@@ -1,5 +1,6 @@
 [![Build](https://github.com/uroesch/JoplinPortable/workflows/build-package/badge.svg)](https://github.com/uroesch/JoplinPortable/actions?query=workflow%3Abuild-package)
 [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/uroesch/JoplinPortable?include_prereleases)](https://github.com/uroesch/JoplinPortable/releases)
+[![Runs on](https://img.shields.io/badge/runs%20on-Win64%20%26%20Win32-blue)](#runtime-dependencies)
 
 # Joplin Portable for PortableApps.com
 
@@ -24,6 +25,9 @@ moved around.
 The application is available for Windows, Linux, macOS, Android and iOS (the 
 terminal app also works on FreeBSD). A Web Clipper, to save web pages and 
 screenshots from your browser, is also available for Firefox and Chrome.
+
+## Runtime dependencies
+* 32-bit or 64-bit version of Windows.
 
 ## Status 
 This PortableApps project is in beta stage. 
