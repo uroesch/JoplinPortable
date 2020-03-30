@@ -5,21 +5,22 @@
 # Joplin Portable for PortableApps.com
 
 <img src="App/AppInfo/appicon_128.png" align="left">
-[Joplin](https://joplinapp.org/) is a free, open source note taking 
-and to-do application, which can handle a large number of notes 
-organised into notebooks.  The notes are searchable, can be copied, 
-tagged and modified either from the applications directly or from 
-your own text editor. The notes are in Markdown format. 
 
-Notes exported from Evernote via .enex files can be imported into Joplin, 
-including the formatted content (which is converted to Markdown), resources 
-(images, attachments, etc.) and complete metadata (geolocation, updated time, 
+[Joplin](https://joplinapp.org/) is a free, open source note taking
+and to-do application, which can handle a large number of notes
+organised into notebooks.  The notes are searchable, can be copied,
+tagged and modified either from the applications directly or from
+your own text editor. The notes are in Markdown format.
+
+Notes exported from Evernote via .enex files can be imported into Joplin,
+including the formatted content (which is converted to Markdown), resources
+(images, attachments, etc.) and complete metadata (geolocation, updated time,
 created time, etc.). Plain Markdown files can also be imported.
 
-The notes can be synchronised with various cloud services including Nextcloud, 
-Dropbox, OneDrive, WebDAV or the file system (for example with a network 
-directory). When synchronising the notes, notebooks, tags and other metadata 
-are saved to plain text files which can be easily inspected, backed up and 
+The notes can be synchronised with various cloud services including Nextcloud,
+Dropbox, OneDrive, WebDAV or the file system (for example with a network
+directory). When synchronising the notes, notebooks, tags and other metadata
+are saved to plain text files which can be easily inspected, backed up and
 moved around.
 
 The application is available for Windows, Linux, macOS, Android and iOS (the 
