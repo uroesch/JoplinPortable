@@ -28,7 +28,7 @@ terminal app also works on FreeBSD). A Web Clipper, to save web pages and
 screenshots from your browser, is also available for Firefox and Chrome.
 
 ## Runtime dependencies
-* 64-bit version of Windows.
+* 32-bit or 64-bit version of Windows.
 
 ## Support matrix
 
