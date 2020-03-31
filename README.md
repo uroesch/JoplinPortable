@@ -36,11 +36,11 @@ screenshots from your browser, is also available for Firefox and Chrome.
 |-----------------|:------------------:|:-------------------:|
 | Windows XP      | :no_entry_sign:    | :no_entry_sign:     | 
 | Windows Vista   | :no_entry_sign:    | :no_entry_sign:     | 
-| Windows 7       | :no_entry_sign:    | :white_check_mark:  |  
-| Windows 8       | :no_entry_sign:    | :white_check_mark:  | 
-| Windows 10      | :no_entry_sign:    | :heavy_check_mark:  |
+| Windows 7       | :white_check_mark: | :white_check_mark:  |  
+| Windows 8       | :white_check_mark: | :white_check_mark:  | 
+| Windows 10      | :heavy_check_mark: | :heavy_check_mark:  |
 
-Legend: :no_entry_sign: not supported;  :question: no data; :white_check_mark: supposed to work but not verified; :heavy_check_mark: verified;
+Legend: :no_entry_sign: not supported; :white_check_mark: supposed to work but not verified; :heavy_check_mark: verified;
 
 ## Status 
 This PortableApps project is in beta stage. 
