@@ -1,7 +1,7 @@
 # -----------------------------------------------------------------------------
 # Build workflow for portable apps
 # Author: Urs Roesch https://github.com/uroesch
-# Version: 0.0.3 
+# Version: 0.0.4 
 # -----------------------------------------------------------------------------
 name: build-package
 
@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DISPLAY: ':7777'
+      PA_DOWNLOAD: https://sourceforge.net/projects/portableapps/files/PortableApps.com%%20%s/%s/download
 
     steps:
     - name: Install Wine ~ hick ~
@@ -36,14 +37,14 @@ jobs:
       shell: bash
       run: |
         curl --location -o ../PortableApps.comInstaller.exe \
-        'https://portableapps.com/redirect/?a=PortableApps.comInstaller&s=s&d=pa&f=PortableApps.comInstaller_3.5.16.paf.exe'
+        $(printf "${PA_DOWNLOAD}" Installer PortableApps.comInstaller_3.5.16.paf.exe)
         7z x -y -o../PortableApps.comInstaller ../PortableApps.comInstaller.exe
 
     - name: Download and install PortableApps.comLauncher
       shell: bash
       run: |
         curl --location -o ../PortableApps.comLauncher.exe \
-        'https://portableapps.com/redirect/?a=PortableApps.comLauncher&s=s&d=pa&f=PortableApps.comLauncher_2.2.2.paf.exe'
+        $(printf "${PA_DOWNLOAD}" Launcher PortableApps.comLauncher_2.2.2.paf.exe)
         7z x -y -o../PortableApps.comLauncher ../PortableApps.comLauncher.exe
      
     - name: Checkout repository
