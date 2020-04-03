@@ -34,13 +34,13 @@ screenshots from your browser, is also available for Firefox and Chrome.
 
 | OS              | 32-bit             | 64-bit              | 
 |-----------------|:------------------:|:-------------------:|
-| Windows XP      | :no_entry_sign:    | :no_entry_sign:     | 
-| Windows Vista   | :no_entry_sign:    | :no_entry_sign:     | 
-| Windows 7       | :white_check_mark: | :white_check_mark:  |  
-| Windows 8       | :white_check_mark: | :white_check_mark:  | 
-| Windows 10      | :heavy_check_mark: | :heavy_check_mark:  |
+| Windows XP      | ![ns][ns]          | ![ns][ns]           | 
+| Windows Vista   | ![ns][ns]          | ![ns][ns]           | 
+| Windows 7       | ![ps][ps]          | ![fs][ps]           |  
+| Windows 8       | ![ps][ps]          | ![fs][ps]           |  
+| Windows 10      | ![fs][fs]          | ![fs][fs]           |
 
-Legend: :no_entry_sign: not supported; :white_check_mark: supposed to work but not verified; :heavy_check_mark: verified;
+Legend: ![ns][ns] not supported;  ![nd][nd] no data; ![ps][ps] supported but not verified; ![fs][fs] verified;`
 
 ## Status 
 This PortableApps project is in beta stage. 
@@ -69,3 +69,8 @@ To build the installer run the following command in the root of the git reposito
 ```
 powershell Other/Update/Update.ps1
 ```
+
+[nd]: Other/Icons/no_data.svg
+[ns]: Other/Icons/no_support.svg
+[ps]: Other/Icons/probably_supported.svg
+[fs]: Other/Icons/full_support.svg
