@@ -37,8 +37,8 @@ screenshots from your browser, is also available for Firefox and Chrome.
 |-----------------|:------------------:|:-------------------:|
 | Windows XP      | ![ns][ns]          | ![ns][ns]           | 
 | Windows Vista   | ![ns][ns]          | ![ns][ns]           | 
-| Windows 7       | ![ps][ps]          | ![fs][ps]           |  
-| Windows 8       | ![ps][ps]          | ![fs][ps]           |  
+| Windows 7       | ![fs][fs]          | ![ps][ps]           |  
+| Windows 8       | ![ps][ps]          | ![ps][ps]           |  
 | Windows 10      | ![fs][fs]          | ![fs][fs]           |
 
 Legend: ![ns][ns] not supported;  ![nd][nd] no data; ![ps][ps] supported but not verified; ![fs][fs] verified;`
