@@ -41,7 +41,7 @@ screenshots from your browser, is also available for Firefox and Chrome.
 | Windows 8       | ![ps][ps]          | ![ps][ps]           |  
 | Windows 10      | ![fs][fs]          | ![fs][fs]           |
 
-Legend: ![ns][ns] not supported;  ![nd][nd] no data; ![ps][ps] supported but not verified; ![fs][fs] verified;`
+Legend: ![ns][ns] not supported;  ![nd][nd] no data; ![ps][ps] supported but not verified; ![fs][fs] verified;
 
 ## Status 
 This PortableApps project is in beta stage. 
