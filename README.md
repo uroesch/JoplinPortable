@@ -101,7 +101,7 @@ To unblock the installer and install the application follow the annotated screen
 <!-- Start include BUILD.md -->
 ### Build
 
-#### Windows 
+#### Windows
 
 ##### Windows 10
 
@@ -149,7 +149,7 @@ curl -sJL https://raw.githubusercontent.com/uroesch/PortableApps/master/scripts/
 ##### Ubuntu 20.04
 
 To build the installer under Ubuntu 20.04 `Wine`, `PowerShell`, `7-Zip` and when building headless
-`Xvfb` are required. 
+`Xvfb` are required.
 
 ###### Setup
 ```
@@ -183,7 +183,7 @@ pwsh Other/Update/Update.ps1
 ##### Ubuntu 18.04
 
 To build the installer under Ubuntu 18.04 `Wine`, `PowerShell`, `7-Zip` and when building headless
-`Xvfb` are required. 
+`Xvfb` are required.
 
 ###### Setup
 ```
