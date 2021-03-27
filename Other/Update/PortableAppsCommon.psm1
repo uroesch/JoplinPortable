@@ -2,7 +2,7 @@
 # Description: Common classes and functions for portable apps powershell
 #   scripts
 # Author: Urs Roesch <github@bun.ch>
-# Version: 0.9.1
+# Version: 0.9.2
 # -----------------------------------------------------------------------------
 
 # -----------------------------------------------------------------------------
@@ -213,7 +213,6 @@ Function Download-Checksum() {
           Return $Line -replace "^($Pattern)\s+\*?$File", "`$1"
         }
         default {
-          Debug debug "No match in line '$File'"
           Debug debug "No match in line '$Line'"
         }
       }
