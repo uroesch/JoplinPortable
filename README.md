@@ -47,16 +47,15 @@ screenshots from your browser, is also available for Firefox and Chrome.
 
 Legend: ![ns][ns] not supported; ![na][na] not applicable; ![nd][nd] no data; ![ps][ps] supported but not verified; ![fs][fs] verified;
 
-## Status 
-This PortableApps project is in beta stage. 
-
-## Todo
-- [ ] Documentation
-- [x] Icons are showing a black background instead of being transparent
-
 ## Disclaimer
 Joplin is already Portable right from the bat. This wrapper does only segrate 
 the data into the PortableApps `Data` directory.
+
+## Status 
+This PortableApps project is in productive state. 
+
+## Data Directory
+The data for this JoplinPortable can be found under `"%PAL:DataDir%\Joplin`. 
 
 <!-- Start include INSTALL.md -->
 ## Installation
