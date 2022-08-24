@@ -1,0 +1,41 @@
+# -----------------------------------------------------------------------------
+# Build and upload a new release
+# Author: Urs Roesch https://github.com/uroesch
+# Version: 0.1.1
+# -----------------------------------------------------------------------------
+name: up-release
+
+on: workflow_dispatch
+
+jobs:
+  up-release:
+    if: endsWith(github.repository, 'Portable')
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Git repo setup
+      run: |2+
+        git config user.name "Urs Roesch"
+        git config user.email github@bun.ch
+        git fetch --all
+        git checkout master || git checkout main
+
+    - name: Download build-scripts
+      shell: bash
+      run: |2+
+        mkdir ../scripts &&
+        cd ../scripts &&
+        curl --silent -JLO https://raw.githubusercontent.com/uroesch/PortableApps/master/scripts/up-release.sh &&
+        curl --silent -JLO https://raw.githubusercontent.com/uroesch/PortableApps/master/scripts/docker-build.sh &&
+        curl --silent -JLO https://raw.githubusercontent.com/uroesch/PortableApps/master/scripts/pa-github-release.sh
+
+    - name: Run build script via docker
+      shell: bash
+      run: bash ../scripts/up-release.sh
+      timeout-minutes: 25
