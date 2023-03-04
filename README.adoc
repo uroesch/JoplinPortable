@@ -118,7 +118,6 @@ This PortableApps project is in productive state.
 The data for this JoplinPortable can be found under `"%PAL:DataDir%\Joplin`.
 
 // Start include INSTALL.adoc
-
 == Installation
 
 === Download
@@ -162,11 +161,9 @@ image:howto_unblock-file.png[width="600"]
 . Right click on the executable file.
 . Choose `Properties` at the bottom of the menu.
 . Check the unblock box.
-
 // End include INSTALL.adoc
 
 // Start include BUILD.adoc
-
 === Build
 
 ==== Windows
@@ -299,7 +296,6 @@ git clone {git-base-url}/{app-name}.git
 cd {app-name}
 pwsh Other/Update/Update.ps1
 ----
-
 // End include BUILD.adoc
 
 // vim: set colorcolumn=80 textwidth=80 : #spell spelllang=en_us :
